@@ -159,6 +159,51 @@ public class Sets {
 		
 	}
 	
+	public void Septima(){
+		int Java = java.size();
+		int Web = web.size();
+		int Moviles = moviles.size();
+		
+		if(Java>Web && Java>Moviles){
+			System.out.println("");
+			System.out.println("JAVA TIENE MÁS DESARROLLADORES");
+			System.out.println("");
+			Set<Programador> nuevo = new  TreeSet<Programador>();
+			nuevo.addAll(java);
+			for(Iterator<Programador> es  = nuevo.iterator(); es.hasNext();){
+				Programador lista = es.next();
+				String Nombre = lista.getNombre();
+				System.out.println(Nombre);
+		}
+		}
+		if(Web>Java && Web>Moviles){
+			System.out.println("");
+			System.out.println("WEB TIENE MÁS DESARROLLADORES");
+			System.out.println("");
+			Set<Programador> nuevo = new  TreeSet<Programador>();
+			nuevo.addAll(web);
+			for(Iterator<Programador> es  = nuevo.iterator(); es.hasNext();){
+				Programador lista = es.next();
+				String Nombre = lista.getNombre();
+				System.out.println(Nombre);
+		}
+		}
+		else{
+			
+			System.out.println("");
+			System.out.println("MOVILES TIENE MÁS DESARROLLADORES");
+			System.out.println("");
+			Set<Programador> nuevo = new  TreeSet<Programador>();
+			nuevo.addAll(moviles);
+			for(Iterator<Programador> es  = nuevo.iterator(); es.hasNext();){
+				Programador lista = es.next();
+				String Nombre = lista.getNombre();
+				System.out.println(Nombre);
+		}
+		
+		}
+	}
+	
 	public void Sexta(){
 		int Java = java.size();
 		int Web = web.size();
@@ -168,23 +213,34 @@ public class Sets {
 			System.out.println("");
 			System.out.println("JAVA TIENE MÁS DESARROLLADORES");
 			System.out.println("");
+			for(Iterator<Programador> es  = java.iterator(); es.hasNext();){
+				Programador lista = es.next();
+				String Nombre = lista.getNombre();
+				System.out.println(Nombre);
+			}
 		}
 		if(Web>Java && Web>Moviles){
 			System.out.println("");
 			System.out.println("WEB TIENE MÁS DESARROLLADORES");
 			System.out.println("");
+			for(Iterator<Programador> es  = web.iterator(); es.hasNext();){
+				Programador lista = es.next();
+				String Nombre = lista.getNombre();
+				System.out.println(Nombre);
+			}
 		}
 		else{
+			
 			System.out.println("");
 			System.out.println("MOVILES TIENE MÁS DESARROLLADORES");
 			System.out.println("");
+			for(Iterator<Programador> es  = moviles.iterator(); es.hasNext();){
+				Programador lista = es.next();
+				String Nombre = lista.getNombre();
+				System.out.println(Nombre);
+			}
 		}
 	}
-	
-	public void Septima(){
 		
 	}
-		
-	}
-
 	
