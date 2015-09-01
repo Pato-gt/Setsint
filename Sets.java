@@ -79,12 +79,36 @@ public class Sets {
 				}
 			}
 		}
+		System.out.println("");
+	}
+	
+	public void Tercera(){
+		System.out.println("");
+		System.out.println("WEB Y CEL NO CON JAVA");
+		for(Iterator<Programador> en = moviles.iterator(); en.hasNext();){
+			Programador enM = en.next();
+			String NombreM = enM.getNombre();
+			for(Iterator<Programador> esta = web.iterator(); esta.hasNext();){
+				Programador siW = esta.next();
+				String NombreW = siW.getNombre();
+				if(NombreW.compareTo(NombreM)== 0){
+					for(Iterator<Programador> si = java.iterator(); si.hasNext(); ){
+						Programador enJa = si.next();
+						String NombreJ = enJa.getNombre();
+						if(NombreW.compareTo(NombreJ) !=0){
+							System.out.println(NombreM);
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	public void Cuarta(){
+		
 	}
 		
 	}
 	
 
-	
-	
-	
 	
