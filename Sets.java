@@ -105,10 +105,86 @@ public class Sets {
 	}
 	
 	public void Cuarta(){
+		System.out.println("");
+		System.out.println("WEB Ó CEL NO CON JAVA");
+		System.out.println("");
+		for(Iterator<Programador> en = moviles.iterator(); en.hasNext();){
+			Programador enM = en.next();
+			String NombreM = enM.getNombre();
+			for(Iterator<Programador> no = java.iterator(); no.hasNext();){
+				Programador NoJ = no.next();
+				String NombreJ = NoJ.getNombre();
+				if(NombreJ.compareTo(NombreM) != 0){
+					System.out.println(NombreM);
+					}
+				}
+		}
 		
+		for(Iterator<Programador> en = web.iterator(); en.hasNext();){
+			Programador enM = en.next();
+			String NombreM = enM.getNombre();
+			for(Iterator<Programador> no = java.iterator(); no.hasNext();){
+				Programador NoJ = no.next();
+				String NombreJ = NoJ.getNombre();
+				if(NombreJ.compareTo(NombreM) != 0){
+					System.out.println(NombreM);
+					}
+				}
+		}
 	}
+	
+	public void Quinta(){
+		System.out.println("");
+		System.out.println("¿ES JAVA SUBCONJUNTO DE WEB?");
+		System.out.println("");
+		int NúmeroWeb = java.size();
+		int coincidencias = 0;
+		for(Iterator<Programador> puede = java.iterator(); puede.hasNext();){
+			Programador EnJ = puede.next();
+			String NombreJ = EnJ.getNombre();
+			for(Iterator<Programador> talvez = web.iterator(); talvez.hasNext();){
+				Programador EnW = talvez.next();
+				String NombreW = EnW.getNombre();
+				if(NombreJ.compareTo(NombreW) == 0){
+					coincidencias +=1;
+				}
+			}
+		}
+		if(coincidencias == NúmeroWeb){
+			System.out.println(true);
+		}
+		else
+			System.out.println(false);
+		
 		
 	}
 	
+	public void Sexta(){
+		int Java = java.size();
+		int Web = web.size();
+		int Moviles = moviles.size();
+		
+		if(Java>Web && Java>Moviles){
+			System.out.println("");
+			System.out.println("JAVA TIENE MÁS DESARROLLADORES");
+			System.out.println("");
+		}
+		if(Web>Java && Web>Moviles){
+			System.out.println("");
+			System.out.println("WEB TIENE MÁS DESARROLLADORES");
+			System.out.println("");
+		}
+		else{
+			System.out.println("");
+			System.out.println("MOVILES TIENE MÁS DESARROLLADORES");
+			System.out.println("");
+		}
+	}
+	
+	public void Septima(){
+		
+	}
+		
+	}
 
 	
