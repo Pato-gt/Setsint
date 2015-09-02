@@ -1,3 +1,4 @@
+/*PATRICK ORDO√ëEZ 131062*/
 import java.util.*;
 public class Sets {
 	private Set<Programador> web;
@@ -106,7 +107,7 @@ public class Sets {
 	
 	public void Cuarta(){
 		System.out.println("");
-		System.out.println("WEB ” CEL NO CON JAVA");
+		System.out.println("WEB √ì CEL NO CON JAVA");
 		System.out.println("");
 		for(Iterator<Programador> en = moviles.iterator(); en.hasNext();){
 			Programador enM = en.next();
@@ -135,9 +136,9 @@ public class Sets {
 	
 	public void Quinta(){
 		System.out.println("");
-		System.out.println("øES JAVA SUBCONJUNTO DE WEB?");
+		System.out.println("¬øES JAVA SUBCONJUNTO DE WEB?");
 		System.out.println("");
-		int N˙meroWeb = java.size();
+		int N√∫meroWeb = java.size();
 		int coincidencias = 0;
 		for(Iterator<Programador> puede = java.iterator(); puede.hasNext();){
 			Programador EnJ = puede.next();
@@ -150,7 +151,7 @@ public class Sets {
 				}
 			}
 		}
-		if(coincidencias == N˙meroWeb){
+		if(coincidencias == N√∫meroWeb){
 			System.out.println(true);
 		}
 		else
@@ -166,7 +167,7 @@ public class Sets {
 		
 		if(Java>Web && Java>Moviles){
 			System.out.println("");
-			System.out.println("JAVA TIENE M¡S DESARROLLADORES");
+			System.out.println("JAVA TIENE M√ÅS DESARROLLADORES");
 			System.out.println("");
 			Set<Programador> nuevo = new  TreeSet<Programador>();
 			nuevo.addAll(java);
@@ -178,7 +179,7 @@ public class Sets {
 		}
 		if(Web>Java && Web>Moviles){
 			System.out.println("");
-			System.out.println("WEB TIENE M¡S DESARROLLADORES");
+			System.out.println("WEB TIENE M√ÅS DESARROLLADORES");
 			System.out.println("");
 			Set<Programador> nuevo = new  TreeSet<Programador>();
 			nuevo.addAll(web);
@@ -191,7 +192,7 @@ public class Sets {
 		else{
 			
 			System.out.println("");
-			System.out.println("MOVILES TIENE M¡S DESARROLLADORES");
+			System.out.println("MOVILES TIENE M√ÅS DESARROLLADORES");
 			System.out.println("");
 			Set<Programador> nuevo = new  TreeSet<Programador>();
 			nuevo.addAll(moviles);
@@ -211,7 +212,7 @@ public class Sets {
 		
 		if(Java>Web && Java>Moviles){
 			System.out.println("");
-			System.out.println("JAVA TIENE M¡S DESARROLLADORES");
+			System.out.println("JAVA TIENE M√ÅS DESARROLLADORES");
 			System.out.println("");
 			for(Iterator<Programador> es  = java.iterator(); es.hasNext();){
 				Programador lista = es.next();
@@ -221,7 +222,7 @@ public class Sets {
 		}
 		if(Web>Java && Web>Moviles){
 			System.out.println("");
-			System.out.println("WEB TIENE M¡S DESARROLLADORES");
+			System.out.println("WEB TIENE M√ÅS DESARROLLADORES");
 			System.out.println("");
 			for(Iterator<Programador> es  = web.iterator(); es.hasNext();){
 				Programador lista = es.next();
@@ -232,7 +233,7 @@ public class Sets {
 		else{
 			
 			System.out.println("");
-			System.out.println("MOVILES TIENE M¡S DESARROLLADORES");
+			System.out.println("MOVILES TIENE M√ÅS DESARROLLADORES");
 			System.out.println("");
 			for(Iterator<Programador> es  = moviles.iterator(); es.hasNext();){
 				Programador lista = es.next();
